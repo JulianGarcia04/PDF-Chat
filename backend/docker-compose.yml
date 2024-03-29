@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  redis-stack:
+    image: redis/redis-stack:latest
+    hostname: localhost
+    ports:
+      - 6379:6379
+      - 8001:8001
+    volumes:
+      - ~/.docker-conf/redis-stack/data/:/data
+
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+    hostname: localhost
+    ports:
+      - 10000:10000
+      - 10001:10001
+      - 10002:10002
+    volumes:
+      - ~/.docker-conf/azurite/data/:/data
+
+  ollama:
+    image: "ollama/ollama:latest"
+    hostname: localhost
+    ports:
+      - 11434:11434
+    volumes:
+      - ~/.docker-conf/ollama/data/:/data

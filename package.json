@@ -1,0 +1,30 @@
+{
+  "name": "pdf-chat",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.4.1",
+    "@astrojs/svelte": "^5.0.3",
+    "@astrojs/tailwind": "^5.1.0",
+    "@midudev/tailwind-animations": "^0.0.7",
+    "astro": "^4.3.2",
+    "axios": "^1.6.7",
+    "flowbite-svelte-icons": "^1.3.1",
+    "svelte": "^4.2.9",
+    "svelte-file-dropzone": "^2.0.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "flowbite": "^2.2.1",
+    "flowbite-svelte": "^0.44.22"
+  }
+}
